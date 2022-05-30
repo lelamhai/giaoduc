@@ -3423,6 +3423,7 @@ PRINTER
     margin: 20px 0 20px 20px;
 }
 
+.fn-header-row-inner .fn-site-title img,
 .fn-header-row-inner .h-fn-site-title img {
     width: 150px;
     height: auto;
@@ -3515,7 +3516,7 @@ PRINTER
 }
 
 /* Detail */
-.h-custom-post {
+/* .h-custom-post {
 	display: flex;
 	margin-top: 45px;
 }
@@ -3528,6 +3529,10 @@ PRINTER
 .student-information {
 	width: 50%;
 	margin-left: 15px;
+} */
+
+.h-fn-footer-row-widgets {
+	padding-top: 30px;
 }
 
 .post-big {
@@ -3562,8 +3567,11 @@ PRINTER
 }
 
 .img-normal {
-	width: 70%;
-	
+	width: 40%;
+}
+
+.img-normal img {
+	width: 100%;
 }
 
 .titile-big {
@@ -3572,13 +3580,14 @@ PRINTER
 }
 
 .title-noraml {
+	width: 60%;
 	padding-left: 10px;
 	font-size: 18px;
 	font-weight: bold;
 }
 
 
-@media only screen and (min-width: 100px) and (max-width: 767px) {
+/* @media only screen and (min-width: 100px) and (max-width: 767px) {
 	.h-custom-post {
 		flex-direction: column;
 	}
@@ -3592,4 +3601,4 @@ PRINTER
 		width: 100%;
 		margin-left: 0;
 	}
-}
+} */

@@ -57,7 +57,11 @@ function flatnews_site_title() {
 	}
 	
 	if (!is_home() && !is_front_page()) : ?>
-		<h2 class="fn-site-title"><?php echo $site_title; ?></h2>
+		<h2 class="fn-site-title">
+			<a href="<?php echo get_home_url() ?>">
+                <img src="<?php the_field('h-log', 'options') ?>" alt="<?php echo get_bloginfo() ?>"> 
+            </a>
+		</h2>
 	<?php else : ?>
 		<h1 class="fn-site-title h-fn-site-title">
             <a href="<?php echo get_home_url() ?>">
