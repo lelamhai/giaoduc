@@ -1,7 +1,7 @@
 <?php
 /*DEFINES*/
 /*common*/
-define('FLATNEWS_THEME_VERSION', '5.6');
+define('FLATNEWS_THEME_VERSION', '6.6');
 define('FLATNEWS_REQUIRED_SNEEIT_PLUGIN_VERSION', '8.1');
 define('FLATNEWS_REQUIRED_ENVATO_PLUGIN_VERSION', '2.0.1');
 define('FLATNEWS_IS_LOCALHOST', apply_filters('sneeit_is_localhost', false));
@@ -44,3 +44,8 @@ require_once FLATNEWS_THEME_PATH_SETUP		. 'setup-init.php';
 require_once FLATNEWS_THEME_PATH_AJAX			. 'ajax-init.php';
 require_once FLATNEWS_THEME_PATH_SHORTCODES	. 'shortcodes-init.php';
 require_once FLATNEWS_THEME_PATH_WIDGETS		. 'widgets-init.php';
+
+/** REGISTER OPTIONS ACF **/
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array('page_title'=>'Theme Configs','menu_title'=>'Theme Configs','menu_slug'=>'acf-options-theme-options'));
+}

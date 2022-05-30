@@ -2,7 +2,80 @@
 	
 	
 	</main>
-	<?php get_sidebar(); ?>
+	<!-- <?php get_sidebar(); ?> -->
+	<div class="wrap-sidebar1 fn-main-sidebar fn-block">
+
+	<?php 
+		$rows = get_field('h-sidebar1','options');
+		if( $rows ) {
+			foreach( $rows as $row ) {
+				$image = $row['h-icon'];
+				?>
+					<div class="item-sidebar1">
+						<div class="icon-left-sidebar1">
+							<img src="<?php echo $row['h-icon']?>" alt="">
+						</div>
+
+						<div class="text-right-sidebar1 ">
+							<a href="<?php echo $row['h-href-sidebar1']?>">
+								<?php echo $row['h-text']?>
+							</a>
+						</div>
+					</div>
+				<?php
+			}
+			echo '</ul>';
+		}
+	?>
+		
+	</div>
+
+	<div class="wrap-sidebar2 fn-main-sidebar fn-block">
+		<div class="wrap-sidebar2">
+			<div class="title-sidebar2">
+				Văn bản chỉ đạo
+			</div>
+			<ul class="list-sidebar2">
+			<?php 
+				$rows = get_field('h-sidebar2','options');
+				if( $rows ) {
+					foreach( $rows as $row ) {
+						$image = $row['h-icon'];
+						?>
+							<li class="item-sidebar2">
+								<a href="<?php echo $row['h-href-sidebar2']?>"><?php echo $row['h-text-sidebar2']?></a>
+							</li>
+						<?php
+					}
+					echo '</ul>';
+				}
+			?>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrap-sidebar3 fn-main-sidebar fn-block">
+		<div class="wrap-sidebar3">
+		<?php 
+				$rows = get_field('h-sidebar3','options');
+				if( $rows ) {
+					foreach( $rows as $row ) {
+						$image = $row['h-icon'];
+						?>
+							<div class="image-sidebar3">
+								<a href="<?php echo $row['h-href-sidebar3']?>">
+									<img src="<?php echo $row['h-image-sidebar3']?>">
+								</a>
+							</div>
+						<?php
+					}
+					echo '</ul>';
+				}
+			?>
+		</div>
+	</div>
+
+
 	<div class="clear"></div>
 </section>
 
