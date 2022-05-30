@@ -12,13 +12,23 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">	
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo("template_directory"); ?>/assets/slick/slick.css">
+  	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo("template_directory"); ?>/assets/slick/slick-theme.css">
+	<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/responsive.css"> -->
 	<link rel="pingback" href="<?php esc_url(bloginfo( 'pingback_url' )); ?>">
+	<link rel="profile" href="1111111">
 	<?php wp_head();?>
+	<link rel="profile" href="2222222">
 </head>
 
 
 
 <body <?php body_class(); ?>>
+
+
+
+
+
 <?php
 
 $header_layout = get_theme_mod('header_layout');

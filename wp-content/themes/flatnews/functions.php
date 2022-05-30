@@ -1,9 +1,9 @@
 <?php
 /*DEFINES*/
 /*common*/
-define('FLATNEWS_THEME_VERSION', '7.0');
-define('FLATNEWS_REQUIRED_SNEEIT_PLUGIN_VERSION', '8.1');
-define('FLATNEWS_REQUIRED_ENVATO_PLUGIN_VERSION', '2.0.1');
+define('FLATNEWS_THEME_VERSION', '82');
+define('FLATNEWS_REQUIRED_SNEEIT_PLUGIN_VERSION', '8.2');
+define('FLATNEWS_REQUIRED_ENVATO_PLUGIN_VERSION', '2.0.2');
 define('FLATNEWS_IS_LOCALHOST', apply_filters('sneeit_is_localhost', false));
 
 /*URL URI*/

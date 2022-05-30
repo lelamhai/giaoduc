@@ -25,3 +25,17 @@
 	<?php do_action('sneeit_display_compact_menu', 'main-menu'); ?>
 	<div class="clear"></div>
 </div></div><!--.fn-header-row-3-->
+
+<div class="h-wrap-slide">
+	<div class="h-slide">
+		<?php
+			$images = get_field('h-slider','options');
+			if( $images ): ?>
+				<?php foreach( $images as $image ): ?>
+					<div class="item-slide">
+						<img src="<?php echo $image;?>"/>
+					</div>
+				<?php endforeach; ?>
+		<?php endif; ?>
+	</div>
+</div>

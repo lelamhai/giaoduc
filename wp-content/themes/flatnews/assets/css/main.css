@@ -3586,6 +3586,11 @@ PRINTER
 	font-weight: bold;
 }
 
+/* slide */
+.item-slide img {
+	width: 100%;
+}
+
 
 /* @media only screen and (min-width: 100px) and (max-width: 767px) {
 	.h-custom-post {

@@ -124,13 +124,13 @@ function flatnews_enqueue_scripts_styles() {
 		
 	if ( ! get_theme_mod('disable_responsive') ) {
 		wp_enqueue_style( 
-			'flatnews-responsive', 
+			'lelamhai', 
 			flatnews_enqueue_url('responsive.css'), 
 			array(), 
 			FLATNEWS_THEME_VERSION,
 			'(max-width: '.($Fn_Content_Width-1).'px)'
 		);
-		$inline_style .= '*{max-width: 100%;}img{height: auto;}';
+		// $inline_style .= '*{max-width: 100%;}img{height: auto;}';
 	}
 	if ($inline_style) {
 		wp_add_inline_style('flatnews-main', $inline_style);

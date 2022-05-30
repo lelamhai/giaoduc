@@ -490,4 +490,10 @@ endif;
 
 ?>
 <?php wp_footer(); ?>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="<?php echo get_bloginfo("template_directory"); ?>/assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$('.h-slide').slick();
+</script>
+
 </body></html>
