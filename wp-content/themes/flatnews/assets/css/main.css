@@ -3473,6 +3473,10 @@ PRINTER
     color: #fff;
 }
 
+.text-right-sidebar1 a:hover {
+	color: #fff;
+}
+
 /* sidebar 2 */
 .wrap-sidebar2 {
 	border: 1px solid #1e73be;
@@ -3508,4 +3512,84 @@ PRINTER
 .image-sidebar3 img {
 	width: 100%;
 	height: auto;
+}
+
+/* Detail */
+.h-custom-post {
+	display: flex;
+	margin-top: 45px;
+}
+
+.general-news {
+	width: 50%;
+	margin-right: 15px;
+}
+
+.student-information {
+	width: 50%;
+	margin-left: 15px;
+}
+
+.post-big {
+	margin-bottom: 15px;
+}
+
+.post-big a {
+	color: #000;
+}
+
+.img-big img {
+	width: 100%;
+	height: auto;
+}
+
+.post-big a:hover {
+	color: #000;
+}
+
+.post-normal {
+	margin-bottom: 15px;
+}
+
+.post-normal a {
+	display: flex;
+    align-items: center;
+	color: #000;
+}
+
+.post-normal a:hover {
+	color: #000;
+}
+
+.img-normal {
+	width: 70%;
+	
+}
+
+.titile-big {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.title-noraml {
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+	.h-custom-post {
+		flex-direction: column;
+	}
+
+	.general-news {
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.student-information {
+		width: 100%;
+		margin-left: 0;
+	}
 }
