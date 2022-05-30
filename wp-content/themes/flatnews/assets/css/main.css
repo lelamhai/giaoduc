@@ -3416,6 +3416,57 @@ PRINTER
 	.fn-header-row,.fn-header-banner, .fn-sidebar, .entry-sharing-buttons, .author-box, .pagers, #comments, .fn-footer, .scroll-up {display: none}
 	.fn-header-row.fn-header-row-logo {display: block}
 	.fn-content {width: 100%; max-width: none!important;}
-	
-	
+}
+
+/* Lê Lam Hải */
+.fn-header-row-inner .fn-site-title a {
+    margin: 20px 0 20px 20px;
+}
+
+.fn-header-row-inner .h-fn-site-title img {
+    width: 150px;
+    height: auto;
+}
+
+.h-fn-header-row-logo {
+    background-color: unset !important;
+    position: relative;
+}
+
+.h-fn-header-row-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.h-fn-header-row-inner {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+/* sidebar */
+.item-sidebar1
+{
+    display: flex;
+    align-items: center;
+    background-color: #1e73be;
+    padding: 10px;
+}
+
+.icon-left-sidebar1 {
+    display: flex;
+    align-items: center;
+}
+
+.icon-left-sidebar1 img {
+    width: 60px;
+}
+
+.text-left-sidebar1 {
+    cursor: pointer;
+}
+
+.text-left-sidebar1 a {
+    padding-left: 20px;
+    color: #fff;
 }
